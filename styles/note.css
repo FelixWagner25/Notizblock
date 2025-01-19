@@ -1,0 +1,18 @@
+.note {
+  padding: 16px;
+  width: 240px;
+  height: 240px;
+  background-color: turquoise;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-btn-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}

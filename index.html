@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock</title>
+
+    <script src="./script.js" defer></script>
+    <script src="./scripts/templates.js" defer></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/starndard.css" />
+    <link rel="stylesheet" href="./styles/note.css" />
+  </head>
+  <body onload="init()">
+    <div class="center-content">
+      <div class="max-width-1440px">
+        <h1>Notizblock</h1>
+        <h2>Neue Notiz</h2>
+        <div class="new-note">
+          <input type="text" id="note-title" placeholder="Titel" required />
+          <input type="text" id="note-input" placeholder="Notiz" required />
+          <button id="add-note-btn" onclick="addNote(),addNoteTitle()">
+            Notiz speichern
+          </button>
+        </div>
+        <h2>Notizen</h2>
+        <div id="content"></div>
+        <br />
+        <h2>Archiv</h2>
+        <div id="archive-content"></div>
+        <br />
+        <h2>Papierkorb</h2>
+        <div id="trash-content"></div>
+      </div>
+    </div>
+  </body>
+</html>

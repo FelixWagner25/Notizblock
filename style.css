@@ -1,0 +1,17 @@
+.new-note {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 240px;
+}
+
+#content,
+#archive-content {
+  display: flex;
+  gap: 8px;
+}
+
+#trash-content {
+  display: flex;
+  gap: 8px;
+}
