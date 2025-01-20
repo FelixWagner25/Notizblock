@@ -1,10 +1,3 @@
-// let notes = ["banana", "staubsaugen"];
-// let notesTitles = ["Obst", "Aufgabe"];
-// let trashNotes = [];
-// let trashNotesTitles = [];
-// let archiveNotes = [];
-// let archiveNotesTitles = [];
-
 let notesKey = "notes";
 let notesTitlesKey = "note-titles";
 let archiveNotesKey = "archive-notes";
@@ -157,7 +150,3 @@ function saveToLocalStroage(key, item) {
 function deleteLocalStorage(key) {
   localStorage.removeItem(key);
 }
-
-function clearNotebook() {}
-
-// -> Notizen archivieren
