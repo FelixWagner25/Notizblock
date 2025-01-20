@@ -10,8 +10,8 @@ function getNoteTemplate(indexNote) {
   <br/>
   <br/>
   <div class="note-btn-div">
-  <button onclick="pushToArchive(${indexNote})">A</button>
-  <button onclick="pushToTrash(${indexNote})">x</button>
+  <button onclick="moveNote(${indexNote},'notes','archiveNotes')">A</button>
+  <button onclick="moveNote(${indexNote},'notes','trashNotes')">x</button>
   </div>
   </div>
   `;
@@ -29,7 +29,7 @@ function getTrashNoteTemplate(indexTrashNote) {
   <br/>
   <br/>
   <div class="note-btn-div">
-  <button onclick="pushTrashToNotes(${indexTrashNote})" >N</button>
+  <button onclick="moveNote(${indexTrashNote},'trashNotes','notes')" >N</button>
   <button onclick="deleteNote(${indexTrashNote})">x</button>
   </div>
   </div>
@@ -48,8 +48,8 @@ function getArchiveNoteTemplate(indexArchiveNote) {
   <br/>
   <br/>
   <div class="note-btn-div">
-  <button onclick="pushArchiveToNotes(${indexArchiveNote})">N</button>
-  <button onclick="pushArchiveToTrash(${indexArchiveNote})">x</button>
+  <button onclick="moveNote(${indexArchiveNote},'archiveNotes','notes')">N</button>
+  <button onclick="moveNote(${indexArchiveNote},'archiveNotes', 'trashNotes')">x</button>
   </div>
   </div>
     `;
